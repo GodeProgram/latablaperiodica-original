@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Tabla Periódica</title>
+    <link rel="shortcut icon" href="favicon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>La Tabla Periódica</h1>
+    <div class="leyenda">
+        <h2>Filtrar</h2>
+        <button id="todos-btn">Mostrar Todos</button>
+        <button id="metales-btn">Metales</button>
+        <button id="no-metales-btn">No metales</button>
+        <button id="semimetales-btn">Semimetales</button>
+        <button id="gases-nobles-btn">Gases nobles</button>
+    </div>
+    <div class="tabla-periodica">
+        <!-- Primer período -->
+        <div class="elemento H no-metales" data-elemento="H">H</div>
+        <div class="elemento Li metales" data-elemento="Li">Li</div>
+        <div class="elemento Na metales" data-elemento="Na">Na</div>
+        <div class="elemento K metales" data-elemento="K">K</div>
+        <div class="elemento Rb metales" data-elemento="Rb">Rb</div>
+        <div class="elemento Cs metales" data-elemento="Cs">Cs</div>
+        <div class="elemento Fr metales" data-elemento="Fr">Fr</div>
+
+
+
+        <div class="elemento Be metales" data-elemento="Be">Be</div>
+        <div class="elemento Mg metales" data-elemento="Mg">Mg</div>
+        <div class="elemento Ca metales" data-elemento="Ca">Ca</div>
+        <div class="elemento Sr metales" data-elemento="Sr">Sr</div>
+        <div class="elemento Ba metales" data-elemento="Ba">Ba</div>
+        <div class="elemento Ra metales" data-elemento="Ra">Ra</div>
+
+        <div class="elemento Sc metales" data-elemento="Sc">Sc</div>
+        <div class="elemento Y metales" data-elemento="Y">Y</div>
+        <div class="elemento La metales" data-elemento="La">La</div>
+        <div class="elemento Ac metales" data-elemento="Ac">Ac</div>
+
+        <div class="elemento Ti metales" data-elemento="Ti">Ti</div>
+        <div class="elemento Zr metales" data-elemento="Zr">Zr</div>
+        <div class="elemento Hf metales" data-elemento="Hf">Hf</div>
+        <div class="elemento Rf metales" data-elemento="Rf">Rf</div>
+
+        <div class="elemento V metales" data-elemento="V">V</div>
+        <div class="elemento Nb metales" data-elemento="Nb">Nb</div>
+        <div class="elemento Ta metales" data-elemento="Ta">Ta</div>
+        <div class="elemento Db metales" data-elemento="Db">Db</div>
+
+        <div class="elemento Cr metales" data-elemento="Cr">Cr</div>
+        <div class="elemento Mo metales" data-elemento="Mo">Mo</div>
+        <div class="elemento W metales" data-elemento="W">W</div>
+        <div class="elemento Sg metales" data-elemento="Sg">Sg</div>
+
+        <div class="elemento Mn metales" data-elemento="Mn">Mn</div>
+        <div class="elemento Tc metales" data-elemento="Tc">Tc</div>
+        <div class="elemento Re metales" data-elemento="Re">Re</div>
+        <div class="elemento Bh metales" data-elemento="Bh">Bh</div>
+
+        <div class="elemento Fe metales" data-elemento="Fe">Fe</div>
+        <div class="elemento Ru metales" data-elemento="Ru">Ru</div>
+        <div class="elemento Os metales" data-elemento="Os">Os</div>
+        <div class="elemento Hs metales" data-elemento="Hs">Hs</div>
+
+        <div class="elemento Co metales" data-elemento="Co">Co</div>
+        <div class="elemento Rh metales" data-elemento="Rh">Rh</div>
+        <div class="elemento Ir metales" data-elemento="Ir">Ir</div>
+        <div class="elemento Mt metales" data-elemento="Mt">Mt</div>
+
+        <div class="elemento Ni metales" data-elemento="Ni">Ni</div>
+        <div class="elemento Pd metales" data-elemento="Pd">Pd</div>
+        <div class="elemento Pt metales" data-elemento="Pt">Pt</div>
+        <div class="elemento Ds metales" data-elemento="Ds">Ds</div>
+
+
+        <div class="elemento Cu metales" data-elemento="Cu">Cu</div>
+        <div class="elemento Ag metales" data-elemento="Ag">Ag</div>
+        <div class="elemento Au metales" data-elemento="Au">Au</div>
+        <div class="elemento Rg metales" data-elemento="Rg">Rg</div>
+
+        <div class="elemento Zn metales" data-elemento="Zn">Zn</div>
+        <div class="elemento Cd metales" data-elemento="Cd">Cd</div>
+        <div class="elemento Hg metales" data-elemento="Hg">Hg</div>
+        <div class="elemento Cn metales" data-elemento="Cn">Cn</div>
+
+
+        <div class="elemento B semimetales" data-elemento="B">B</div>
+        <div class="elemento Al metales" data-elemento="Al">Al</div>
+        <div class="elemento Ga metales" data-elemento="Ga">Ga</div>
+        <div class="elemento In metales" data-elemento="In">In</div>
+        <div class="elemento Tl metales" data-elemento="Tl">Tl</div>
+        <div class="elemento Nh metales" data-elemento="Nh">Nh</div>
+
+        <div class="elemento C no-metales" data-elemento="C">C</div>
+        <div class="elemento Si semimetales" data-elemento="Si">Si</div>
+        <div class="elemento Ge semimetales" data-elemento="Ge">Ge</div>
+        <div class="elemento Sn metales" data-elemento="Sn">Sn</div>
+        <div class="elemento Pb metales" data-elemento="Pb">Pb</div>
+        <div class="elemento Fl metales" data-elemento="Fl">Fl</div>
+
+        <div class="elemento N no-metales" data-elemento="N">N</div>
+        <div class="elemento P no-metales" data-elemento="P">P</div>
+        <div class="elemento As semimetales" data-elemento="As">As</div>
+        <div class="elemento Sb semimetales" data-elemento="Sb">Sb</div>
+        <div class="elemento Bi metales" data-elemento="Bi">Bi</div>
+        <div class="elemento Mc metales" data-elemento="Mc">Mc</div>
+
+        <div class="elemento O no-metales" data-elemento="O">O</div>
+        <div class="elemento S no-metales" data-elemento="S">S</div>
+        <div class="elemento Se no-metales" data-elemento="Se">Se</div>
+        <div class="elemento Te semimetales" data-elemento="Te">Te</div>
+        <div class="elemento Po semimetales" data-elemento="Po">Po</div>
+        <div class="elemento Lv metales" data-elemento="Lv">Lv</div>
+
+        <div class="elemento F no-metales" data-elemento="F">F</div>
+        <div class="elemento Cl no-metales" data-elemento="Cl">Cl</div>
+        <div class="elemento Br no-metales" data-elemento="Br">Br</div>
+        <div class="elemento I no-metales" data-elemento="I">I</div>
+        <div class="elemento At semimetales" data-elemento="At">At</div>
+        <div class="elemento Ts metales" data-elemento="Ts">Ts</div>
+
+        <div class="elemento He gases-nobles" data-elemento="He">He</div>
+        <div class="elemento Ne gases-nobles" data-elemento="Ne">Ne</div>
+        <div class="elemento Ar gases-nobles" data-elemento="Ar">Ar</div>
+        <div class="elemento Kr gases-nobles" data-elemento="Kr">Kr</div>
+        <div class="elemento Xe gases-nobles" data-elemento="Xe">Xe</div>
+        <div class="elemento Rn gases-nobles" data-elemento="Rn">Rn</div>
+        <div class="elemento Og metales" data-elemento="Og">Og</div>
+
+
+        
+
+    </div>
+    
+    
+    
+    <div class="info-panel" id="info-panel">
+        <h2>Información del Elemento <button id="cerrar-btn">X</button></h2>
+        <div id="elemento-info">
+            Haz clic en un elemento para ver la información.
+        </div>
+    </div>
+<h3>Creado por GodeProgram</h3>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
