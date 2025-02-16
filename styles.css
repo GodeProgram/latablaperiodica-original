@@ -21,7 +21,7 @@ h1 {
     margin: 20px auto;
     height: 400px ;
     width: 80%;
-    background-color: #ffe6e6; /* Color rosa claro para la tabla periódica */
+    background-color: #ffe6e6; 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -30,30 +30,30 @@ h1 {
 .tabla-periodica .elemento {
     text-align: center;
     line-height: 50px;
-    border: 1px solid #ffb3b3; /* Borde rosa para los elementos */
+    border: 1px solid #ffb3b3; 
     cursor: pointer;
     display: none;
 }
 .info-panel {
     display: none;
     position: absolute;
-    top: 180px; /* Ajusta la posición vertical según sea necesario */
-    right: 20px; /* Ajusta la posición horizontal según sea necesario */
+    top: 180px; 
+    right: 20px; 
     width: 30%;
-    background-color: #ffd9e6; /* Color rosa claro para la ventana de información */
+    background-color: #ffd9e6;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .tabla-periodica {
-    position: relative; /* Agregamos esto para que los elementos absolutamente posicionados se alineen relativamente a este contenedor */
+    position: relative; 
 }
 
 
 .leyenda {
     margin-top: 20px;
-    background-color: #ffd9e6; /* Color rosa claro para la leyenda */
+    background-color: #ffd9e6; 
     padding: 10px;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -78,18 +78,17 @@ h3 {
     font-size: 16px;
     cursor: pointer;
 }
-/* Estilos de texto */
 h2 {
-    color: #ff1a75; /* Rosa oscuro para títulos */
+    color: #ff1a75; 
 }
 
 .elemento-info {
-    color: #ff1a75; /* Rosa oscuro para información del elemento */
+    color: #ff1a75;
 }
 
-/* Estilos de botones en la leyenda */
+
 .leyenda button {
-    background-color: #ff99cc; /* Rosa claro para botones */
+    background-color: #ff99cc;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -99,24 +98,22 @@ h2 {
 }
 
 .leyenda button:hover {
-    background-color: #ff1a75; /* Rosa oscuro al pasar el mouse */
+    background-color: #ff1a75; 
 }
 
-/* Colores de fondo de los elementos según tipo */
 .metales {
-    background-color: #ffb3b3; /* Rosa claro para metales */
+    background-color: #ffb3b3; 
 }
 .no-metales {
-    background-color: #ffd9e6; /* Rosa claro para no metales */
+    background-color: #ffd9e6; 
 }
 .semimetales {
-    background-color: #ffc6d9; /* Rosa claro para semimetales */
+    background-color: #ffc6d9; 
 }
 .gases-nobles {
-    background-color: #ff99cc; /* Rosa claro para gases nobles */
+    background-color: #ff99cc;
 }
 
-/* Estilos específicos para cada elemento */
 .H { grid-column: 1 / 2; grid-row: 1 / 2; }
 .Li { grid-column: 1; grid-row: 2; }
 .Na { grid-column: 1; grid-row: 3; }
