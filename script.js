@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     ];
 
-    // Mostrar todos los elementos al cargar la página
+    
     elementosTabla.forEach(elemento => {
         elemento.style.display = 'block';
     });
@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Mostrar información del elemento al hacer clic
+    
     elementosTabla.forEach(elemento => {
         elemento.addEventListener('click', function() {
             mostrarInformacion(this.dataset.elemento);
