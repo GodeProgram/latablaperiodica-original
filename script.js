@@ -223,4 +223,16 @@ document.addEventListener('DOMContentLoaded', function() {
     cerrarBtn.addEventListener('click', function() {
         infoPanel.style.display = 'none';
     });
+document.addEventListener('click', function(event) {
+    if (infoPanel.style.display === 'none') return;
+
+    const hizoClickFuera = !infoPanel.contains(event.target) && event.target !== cerrarBtn;
+
+    const hizoClickEnElemento = event.target.classList.contains('elemento');
+
+    if (hizoClickFuera && !hizoClickEnElemento) {
+        infoPanel.style.display = 'none';
+    }
+});
+
 });
