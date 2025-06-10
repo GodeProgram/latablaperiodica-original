@@ -45,6 +45,19 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.info-panel-medio {
+    display: none;
+    position: absolute;
+    top: 5px; 
+    right: 500px; 
+    width: 30%;
+    background-color: #ffd9e6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
 .tabla-periodica {
     position: relative; 
 }

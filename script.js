@@ -179,26 +179,46 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function mostrarInformacion(elemento) {
-        const elementoSeleccionado = tablaPeriodica.find(item => item.elemento === elemento);
-        if (elementoSeleccionado) {
-            elementoInfo.innerHTML = `
-                <p><strong>Elemento:</strong> ${elementoSeleccionado.elemento}</p>
-                <p><strong>Nombre:</strong> ${elementoSeleccionado.nombre}</p>
-                <p><strong>Masa Atómica:</strong> ${elementoSeleccionado.masa}</p>
-                <p><strong>Tipo:</strong> ${elementoSeleccionado.tipo}</p>
-                <p><strong>Grupo:</strong> ${elementoSeleccionado.grupo}</p>
-                <p><strong>Periodo:</strong> ${elementoSeleccionado.periodo}</p>
-                <p><strong>Número en la tabla:</strong> ${elementoSeleccionado.numero_atomico}</p>
-                <p><strong>Valencias:</strong> ${elementoSeleccionado.valencias}</p>
+    const elementoSeleccionado = tablaPeriodica.find(item => item.elemento === elemento);
+    if (elementoSeleccionado) {
+        elementoInfo.innerHTML = `
+            <p><strong>Elemento:</strong> ${elementoSeleccionado.elemento}</p>
+            <p><strong>Nombre:</strong> ${elementoSeleccionado.nombre}</p>
+            <p><strong>Masa Atómica:</strong> ${elementoSeleccionado.masa}</p>
+            <p><strong>Tipo:</strong> ${elementoSeleccionado.tipo}</p>
+            <p><strong>Grupo:</strong> ${elementoSeleccionado.grupo}</p>
+            <p><strong>Periodo:</strong> ${elementoSeleccionado.periodo}</p>
+            <p><strong>Número en la tabla:</strong> ${elementoSeleccionado.numero_atomico}</p>
+            <p><strong>Valencias:</strong> ${elementoSeleccionado.valencias}</p>
+            <button id="cambiarClaseBtn" style="
+                background-color: #f78fb3;
+                color: white;
+                border: none;
+                padding: 10px 16px;
+                border-radius: 8px;
+                cursor: pointer;
+                font-weight: bold;
+                margin-top: 10px;
+            ">Cambiar lugar del panel</button>
+        `;
+        infoPanel.style.display = 'block';
 
+        const boton = document.getElementById('cambiarClaseBtn');
+        boton.addEventListener('click', () => {
+            if (infoPanel.classList.contains('info-panel-medio')) {
+                infoPanel.classList.remove('info-panel-medio');
+                infoPanel.classList.add('info-panel');
+            } else {
+                infoPanel.classList.remove('info-panel');
+                infoPanel.classList.add('info-panel-medio');
+            }
+        });
 
-            `;
-            infoPanel.style.display = 'block';
-        } else {
-            elementoInfo.innerHTML = ''; 
-            infoPanel.style.display = 'none'; 
-        }
+    } else {
+        elementoInfo.innerHTML = ''; 
+        infoPanel.style.display = 'none'; 
     }
+}
 
     cerrarBtn.addEventListener('click', function() {
         infoPanel.style.display = 'none';
